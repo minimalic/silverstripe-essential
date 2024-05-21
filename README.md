@@ -13,7 +13,7 @@ Provides helpful functions for own templates in Silverstripe CMS.
 Install using Composer:
 
 ```sh
-composer require minimalic/silverstripe-fundamental
+composer require minimalic/silverstripe-essential
 ```
 
 Run from terminal:
