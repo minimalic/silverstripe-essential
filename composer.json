@@ -1,0 +1,27 @@
+{
+    "name": "minimalic/silverstripe-essential",
+    "description": "Provides helpful functions for own templates in Silverstripe CMS 5.",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "essential",
+        "foundation",
+        "base"
+    ],
+    "authors": [
+        {
+            "name": "Sebastian Finke", "email": "dev@minimalic.com"
+        }
+    ],
+    "require": {
+        "silverstripe/cms": "^4 || ^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "minimalic\\Essential\\": "src/"
+        }
+    },
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

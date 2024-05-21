@@ -1,0 +1,10 @@
+---
+name: essential
+---
+SilverStripe\CMS\Controllers\ContentController:
+  extensions:
+    - minimalic\Essential\Extensions\EssentialControllerExtension
+
+SilverStripe\ORM\DataObject:
+  extensions:
+    - minimalic\Essential\Extensions\EssentialObjectExtension
