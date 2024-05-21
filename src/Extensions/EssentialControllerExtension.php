@@ -19,10 +19,15 @@ use SilverStripe\Core\Extension;
 class EssentialControllerExtension extends Extension
 {
 
-    public function PageFunction()
+    /**
+     * Returns short class name of current controller
+     *
+     * @return String
+     */
+    public function getShortClassName()
     {
         $className = (new \ReflectionClass($this->owner))->getShortName();
-        return 'Hi, ' . $className;
+        return $className;
     }
 
 }
