@@ -1,6 +1,6 @@
 # Silverstripe Essential
 
-Provides helpful functions for own templates in Silverstripe CMS.
+Provides helpful functions for use in own templates in Silverstripe CMS.
 
 
 ## Requirements
