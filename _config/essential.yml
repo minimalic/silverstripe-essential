@@ -8,3 +8,7 @@ SilverStripe\CMS\Controllers\ContentController:
 SilverStripe\ORM\DataObject:
   extensions:
     - minimalic\Essential\Extensions\EssentialObjectExtension
+
+SilverStripe\LinkField\Models\Link:
+  extensions:
+    - minimalic\Essential\Extensions\LinkExtension
