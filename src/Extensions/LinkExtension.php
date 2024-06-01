@@ -19,13 +19,18 @@ use minimalic\Fundamental\Modules\ModuleSlideshow;
 
 class LinkExtension extends DataExtension
 {
-    private static array $theme_options = [
-        'primary' => 'Primary',
-        'light' => 'Light',
-        'secondary' => 'Secondary',
-        'dark' => 'Dark',
-    ];
+    /**
+     * Replaces default theme options
+     *
+     * @array
+     */
+    private static array $theme_options = [];
 
+    /**
+     * Adds more theme options to the default options
+     *
+     * @array
+     */
     private static array $theme_options_additional = [];
 
     private static array $db = [
@@ -42,11 +47,27 @@ class LinkExtension extends DataExtension
         $fields->push($fieldTheme);
     }
 
+    /**
+     * Returns theme options as combined array if any additional options set by custom config
+     *
+     * @return array
+     */
     public function getThemeOptions()
     {
         $options = $this->owner->config()->get('theme_options');
         $optionsAdditional = $this->owner->config()->get('theme_options_additional');
 
+        // Set default theme options
+        if (!$options) {
+            $options = [
+                'primary' => 'Primary',
+                'light' => 'Light',
+                'secondary' => 'Secondary',
+                'dark' => 'Dark',
+            ];
+        }
+
+        // Merge additional theme options
         if ($optionsAdditional) {
             $options = array_merge($options, $optionsAdditional);
         }
