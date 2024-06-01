@@ -1,11 +1,13 @@
 # Silverstripe Essential
 
 Provides helpful functions for use in own templates in Silverstripe CMS.
+Extends Silverstripe link module by a "Theme" dropdown for own button styles (Bootstrap naming by default).
 
 
 ## Requirements
 
-* Silverstripe CMS version 4 or 5
+* Silverstripe CMS 5.2 or higher
+* [Silverstripe link module](https://github.com/silverstripe/silverstripe-linkfield)
 
 
 ## Installation
