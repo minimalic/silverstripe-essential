@@ -14,7 +14,8 @@
         }
     ],
     "require": {
-        "silverstripe/cms": "^4 || ^5"
+        "silverstripe/cms": "^5",
+        "silverstripe/linkfield": "^4"
     },
     "autoload": {
         "psr-4": {
