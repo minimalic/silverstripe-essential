@@ -19,11 +19,6 @@ use minimalic\Fundamental\Modules\ModuleSlideshow;
 
 class LinkExtension extends DataExtension
 {
-
-    // private static $table_name = 'ModularObject_Link';
-
-    // private static bool $allowed_by_default = false;
-
     private static array $theme_options = [
         'primary' => 'Primary',
         'light' => 'Light',
@@ -43,7 +38,7 @@ class LinkExtension extends DataExtension
 
     public function updateCMSFields(FieldList $fields)
     {
-        $fieldTheme = DropdownField::create('Theme', 'Theme', $this->owner->getThemeOptions());
+        $fieldTheme = DropdownField::create('Theme', _t(__CLASS__ . '.Theme', 'Theme'), $this->owner->getThemeOptions());
         $fields->push($fieldTheme);
     }
 
