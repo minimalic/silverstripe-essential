@@ -25,6 +25,38 @@ Or, use your base URL with:
 `/dev/build?flush=all`
 
 
+## Basic usage
+
+### link module
+
+Use `$Theme` keyword inside your template.
+
+
+## Configuration
+
+### Custom theme options for the link module
+
+Replace default theme dropdown options with custom options inside local `mysite.yml`:
+
+```yaml
+minimalic\Essential\Extensions\LinkExtension:
+  theme_options:
+    basic: Basic
+    green: 'Green Theme'
+```
+
+To add more options to the default ones use `theme_options_additional`:
+
+```yaml
+minimalic\Essential\Extensions\LinkExtension:
+  theme_options_additional:
+    basic: Basic
+    green: 'Green Theme'
+```
+
+The key (e.g. `green`) will be used inside the template. The value (e.g. `Green Theme`) is only for display purpose inside dropdown field.
+
+
 ## License
 
 See [License](LICENSE)
